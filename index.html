@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies App</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="logo.png"></a>
+      <div class="logo-text">Movies App</div>
+    </div>
+
+    <!-- Search -->
+    <div class="search-wrapper">
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search for movies..." autocomplete="off" />
+        <span class="clear-btn" id="clearBtn">✕</span>
+        <button id="searchBtn">🔍</button>
+      </div>
+      <ul class="suggestions" id="suggestions"></ul>
+    </div>
+
+    <!-- Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider">
+    <div class="slides" id="slides"></div>
+    <button class="nav prev" id="prevBtn">❮</button>
+    <button class="nav next" id="nextBtn">❯</button>
+  </section>
+
+  <section class="movies-section" id="searchSection" style="display:none">
+    <div class="section-header">
+      <h2>Search Results</h2>
+    </div>
+    <div class="movies-row" id="searchResults"></div>
+  </section>
+
+
+  <!-- Most Popular -->
+  <section class="movies-section">
+    <div class="section-header">
+      <h2>Most Popular</h2>
+      <a href="#" class="see-more" id="seeMorePopular">See More</a>
+    </div>
+    <div class="movies-row" id="popularMovies"></div>
+  </section>
+
+  <!-- Trending -->
+  <section class="movies-section">
+    <div class="section-header">
+      <h2>Trending</h2>
+      <a href="#" class="see-more" id="seeMoreTrending">See More</a>
+    </div>
+    <div class="movies-row" id="trendingMovies"></div>
+  </section>
+
+  <!-- Top Series -->
+  <section class="movies-section">
+    <div class="section-header">
+      <h2>Top Series</h2>
+      <a href="#" class="see-more" id="seeMoreSeries">See More</a>
+    </div>
+    <div class="movies-row" id="topSeries"></div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
